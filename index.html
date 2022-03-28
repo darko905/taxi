@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/taxi_logo.png" type="image/png">
+
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+        <title>Laki NIN</title>
+    </head>
+    <body>
+        <!--preloader-->
+        <div class="preloader">
+            <img src="assets/img/preloader.gif" alt="preloader">
+        </div>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#home" class="nav__logo">Laki NIN</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Pocetna</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">Turisticki</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Galerija</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#place" class="nav__link">Cenovnik</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Tamni rezim</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <!-- <img src="assets/video/video.mp4" alt="" class="home__img"> -->
+                <video autoplay muted loop id="myVideo" class="home__img">
+                    <source src="assets/video/video.mp4" type="video/mp4">
+                </video>
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Laki NIN Taxi</span>
+                        <h1 class="home__data-title">Uvek tu za Vas.</h1>
+                        <a href="tel:066-905-12580" class="button">Pozovite</a>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">Turisticke voznje</span>
+                            <a href="#about" class="button button--flex button--link home__info-button">
+                                Detaljnije <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="assets/img/home2.jpeg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Turisticke voznje</h2>
+                        <p class="about__description">Nudimo raznovrstan izbor organizovanih turistickoh voznji u manjim ili vecim grupama.
+                        </p>
+                        <a href="#" class="button">Pogledajte detaljnije</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/tara2.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="assets/img/tara.jpeg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--==================== COUNTER ====================-->
+            <div class="counter-up">
+                <div class="content">
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-car"></i></div>
+                        <div class="counter">1600</div>
+                        <div class="text">Upesnih voznji</div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-hands-helping"></i></div>
+                        <div class="counter">1200</div>
+                        <div class="text">Srecnih klijenata</div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-globe-europe"></i></div>
+                        <div class="counter">450</div>
+                        <div class="text">Dugih voznji </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-city"></i></div>
+                        <div class="counter">2</div>
+                        <div class="text">Pokrivena grada</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">Galerija</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/taxi1.jpeg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title"></h2>
+                                <span class="discover__description"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/taxi2.jpeg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title"></h2>
+                                <span class="discover__description"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/taxi3.jpeg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title"></h2>
+                                <span class="discover__description"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/taxi4.jpeg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title"></h2>
+                                <span class="discover__description"></span>
+                            </div>
+                        </div>
+                        <!--==================== DISCOVER 5 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/taxi5.jpeg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title"></h2>
+                                <span class="discover__description"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== EXPERIENCE ====================-->
+            <section class="experience section">
+                <h2 class="section__title">Usluge</h2>
+                <!-- single question -->
+                <article class="question">
+                    <!-- question title -->
+                    <div class="question-title">
+                        <p>VOZILA SA <span>VOZACEM</span></p>
+                        <button type="button" class="question-btn">
+                            <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- question text -->
+                    <div class="question-text">
+                        <p>
+                            O vašem prevozu se staraju iskusni, bezbedni, pouzdani i uvek nasmejani vozači koji Vas poštuju.
+                        </p>
+                    </div>
+                </article>
+                <!-- end of single question -->
+                <!-- single question -->
+                <article class="question">
+                    <!-- question title -->
+                    <div class="question-title">
+                        <p>VOZNJA DO <span>AERODROMA</span></p>
+                        <button type="button" class="question-btn">
+                            <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- question text -->
+                    <div class="question-text">
+                        <p>
+                            Pružamo lagodan i efikasan prevoz do aerodroma, uz mogućnost zakazivanja.
+                        </p>
+                    </div>
+                </article>
+                <!-- end of single question -->
+                <!-- single question -->
+                <article class="question">
+                    <!-- question title -->
+                    <div class="question-title">
+                        <p>TURISTICKE <span>VOZNJE</span></p>
+                        <!-- button -->
+                        <button type="button" class="question-btn">
+                            <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- question text -->
+                    <div class="question-text">
+                        <p>
+                            Rezervišite vozilo ukoliko želite da posmatrate grad iz druge perspektive i obilazite različite
+                            lokacije.
+                        </p>
+                    </div>
+                </article>
+                <!-- end of single question -->
+                <!-- single question -->
+                <article class="question">
+                    <!-- question title -->
+                    <div class="question-title">
+                        <p>LUKSUZNA <span>VOZILA</span></p>
+                        <!-- button -->
+                        <button type="button" class="question-btn">
+                            <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- question text -->
+                    <div class="question-text">
+                        <p>
+                            Na vaš zahtev pružamo prvoklasnu uslugu prevoza u luksuznim automobilima po vašem izboru.
+                        </p>
+                    </div>
+                </article>
+                <!-- end of single question -->
+            </section>
+
+            <!--==================== VIDEO ====================-->
+            <section class="video section">
+                <h2 class="section__title">Uvek tu za vas</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">Dragoceni trenuci, susreti sa voljenima, brižnost i ljubav su
+                    naša večna inspiracija za pružanje brzog i bezbednog
+                    prevoza.
+                    </p>
+
+                    <div class="video__content">
+                        <video id="video-file">
+                            <source src="assets/video/video.mp4" type="video/mp4">
+                        </video>
+
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PLACES ====================-->
+            <section class="place section" id="place">
+                <h2 class="section__title">Cenovnik</h2>
+
+                <div class="place__container container grid">
+                    <!--==================== PLACES CARD 1 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/tarifa1.jpeg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Tarifa 1</h3>
+                                <span class="place__subtitle">Start 170 din</span>
+                                <span class="place__subtitle">Od 6:00 do 22:00</span>
+                                <span class="place__subtitle">Cekanje 750 din/h</span>
+                                <span class="place__price"><b>65 din/km</b></span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 2 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/tarifa2.jpeg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">5,0</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Tarifa 2</h3>
+                                <span class="place__subtitle">Start 170 din</span>
+                                <span class="place__subtitle">Od 22:00 do 06:00</span>
+                                <span class="place__subtitle">Cekanje 750 din/h</span>
+                                <span class="place__subtitle">Nedelja i praznici</span>
+                                <span class="place__price"><b>85 din/km</b></span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 3 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/tarifa3.jpeg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,9</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Tarifa 3</h3>
+                                <span class="place__subtitle">Start 170 din</span>
+                                <span class="place__subtitle">Od 22:00 do 06:00</span>
+                                <span class="place__subtitle">Cekanje 750 din/h</span>
+                                <span class="place__subtitle">Nedelja i praznici</span>
+                                <span class="place__subtitle">Van teritorije</span>
+                                <span class="place__price"><b>120 din/km</b></span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SUBSCRIBE ====================-->
+            <section class="subscribe section">
+                <div class="subscribe__bg">
+                    <div class="subscribe__container container">
+                        <h2 class="section__title subscribe__title">Viber <i class="fab fa-viber"></i></h2>
+                        <p class="subscribe__description">Naručite vozilo porukom na Viber na broj 0601234567. Оčekujte odgovor sa podacima o vozilu i vremenom dolaska na željenu
+                        adresu.
+                        </p>
+    
+                        <form action="" class="subscribe__form">
+                            <!-- <input type="text" placeholder="Enter email" class="subscribe__input"> -->
+    
+                            <!-- <button class="button">
+                                Posaljite
+                            </button> -->
+                            <a href="viber://chat?number=066901258" class="button">Posaljite</a>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!--==================== MARQUEE ====================-->
+                <div class="marquee">
+                    <ul class="marquee-content">
+                        <li>Laki NIN</li>
+                        <li></li>
+                        <li>0601234567</li>
+                        <li></li>
+                        <li>Laki NIN</li>
+                        <li></li>
+                        <li>0601234567</li>
+                        <li></li>
+                    </ul>
+                </div>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Laki NIN</h3>
+                        <p class="footer__description">
+                            Dragoceni trenuci, susreti sa</br>
+                            voljenima, brižnost i ljubav su naša</br> 
+                            večna inspiracija za pružanje brzog i bezbednog
+                        prevoza.
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Podaci</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link"><b>Radno vreme:</b> Ponedeljak - Nedelja 00:00h - 24:00</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link"><b>Adresa:</b> Ulica 1, B.Basta</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link"><b>Email:</b> nikoladj@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Kontakt</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link"><b>Telefon:</b> 12345</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link"><b>Telefon:</b> 000/1111-000</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link"><b>Telefon:</b> 000/1111-000</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2022. All rigths reserved.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Designed with ❤ by Darko Djukic</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+                $(document).ready(function () {
+                    $('.counter').counterUp({
+                        delay: 10,
+                        time: 1200
+                    });
+                });
+        </script>
+        <!--=============== Question ===============-->
+        <script src="assets/js/qestion.js"></script>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+        
+    </body>
+</html>
